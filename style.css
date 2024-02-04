@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap' );
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+body{
+/*  background-color: #e7d9ff;  */
+background-image: url(land.png);
+
+}
+
+*{
+  margin:0;
+  padding:0;
+}  
+
+nav{
+  background-color:rgba(86, 18, 92, 0.37);
+  color:rgb(218, 216, 211);
+  height:75px;
+  font-size:25px;
+  display:flex;
+  align-items:center;
+  padding:0 12px;
+  font-family: 'Salsa', cursive;
+  cursor: default;
+}
+
+nav ul{
+  list-style-type:none;
+}
+
+.gameContainer{
+ /* background-color: antiquewhite;
+  border-top: 1px inset black ;
+  border-radius: 10px 10px;  */
+  backdrop-filter: blur(2px);
+  display:flex;
+  justify-content:center;
+  padding-top: 10%;
+  margin-top:50px;
+  flex-wrap: wrap;
+}
+
+.container{
+   display:grid;
+   grid-template-rows:repeat(3, 11vw);
+   grid-template-columns:repeat(3, 11vw);
+   font-family: 'Salsa', cursive;
+   position: relative;
+   
+}
+
+.box{
+   border:2px solid rgb(19, 19, 19);
+   font-size: 8vw;
+   cursor: pointer;
+   display: flex;
+   justify-content:center;
+   align-items:center; 
+}
+
+.box:hover{
+   background-color:rgba(233, 230, 236, 0.144);
+}
+
+.info{
+  font-size: 20px;
+  margin: 10px;
+  
+}
+
+.gameInfo {
+  margin: 20px;
+  font-family: 'Baloo Bhaina 2', sans-serif;
+  color: #ffeb3b;
+  margin-top: 40px;
+  margin-left: 10%;
+
+}
+
+.gameInfo h1{
+  font-size: 1.6rem;
+}
+
+.imgbox img{
+  width:0;
+  transition: width 1s ease-in-out;
+}
+
+
+.br-0{
+  border-right: 0;
+}
+
+.bl-0{
+  border-left: 0;
+}
+
+.bt-0{
+  border-top: 0;
+}
+
+.bb-0{
+  border-bottom: 0;
+}
+
+#reset{
+  margin: 0 23px;
+  padding: 6px 14px;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Lucida Sans';
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+#reset:hover{
+  background: rgba(0, 0, 0, 0.466);
+  color: rgb(188, 255, 233);
+}
+
+/*.line{
+  background-color: rgb(127, 68, 182);
+  border-radius: 3px;
+  width: 28vw;
+  height: 4px;
+  position: absolute;
+  transform: translate(0vw, 16vw) rotate(45deg);
+  transition: width 1s ease-in-out;
+
+}
+
+*/
+@media  screen and (max=width = 800px)
+{
+  .gameContainer{
+    flex-wrap: wrap;
+  }
+  .gameInfo{
+    margin-top: 40px;
+  }
+  .gameInfo h1{
+    font-size: 1.6rem;
+  }
+}
